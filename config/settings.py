@@ -21,6 +21,7 @@ ALLOWED_HOSTS = [
     
     
     ]
+CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com', 'https://*.127.0.0.1', 'https://*.localhost',]
 PREPEND_WWW = True 
 # Application definition
 
