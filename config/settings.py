@@ -15,9 +15,8 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost', '.herokuapp.com', '.0.0.0.0']
 CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com', 'https://*.127.0.0.1', 'https://*.localhost',]
-PREPEND_WWW = True 
 # Application definition
 
 INSTALLED_APPS = [
