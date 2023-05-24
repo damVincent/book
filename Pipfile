@@ -9,6 +9,7 @@ django = "==4.2.1"
 pillow = "==9.5.0"
 sqlparse = "==0.4.4"
 tzdata = "==2023.3"
+waitress = "*"
 
 [dev-packages]
 
