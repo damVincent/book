@@ -16,7 +16,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.book-publish.herokuapp.com/',
+    '.herokuapp.com',
     '.127.0.0.1',
     
     
