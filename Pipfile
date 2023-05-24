@@ -11,6 +11,7 @@ sqlparse = "==0.4.4"
 tzdata = "==2023.3"
 waitress = "*"
 psycopg2-binary = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
