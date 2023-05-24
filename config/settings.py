@@ -16,8 +16,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.centdam.com.ng',
-    '.centdam.com',
+    '.book-publish.herokuapp.com/',
     '.127.0.0.1',
     
     
