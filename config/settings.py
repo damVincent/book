@@ -70,24 +70,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-DB_NAME = "books"
-DB_USER = "felicity"
-DB_PASSWORD = "Vin@8462368"
-DATABASES = {
+# DB_NAME = "books"
+# DB_USER = "felicity"
+# DB_PASSWORD = "Vin@8462368"
+# DATABASES = {
     
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': DB_NAME,
-        'USER': DB_USER,
-        'PASSWORD': DB_PASSWORD,
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': DB_NAME,
+#         'USER': DB_USER,
+#         'PASSWORD': DB_PASSWORD,
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
-default_db_url = 'postgres://localhost:5432/books'
+# default_db_url = 'postgres://localhost:5432/books'
 DATABASES = {
-    'default': dj_database_url.config(default=default_db_url, conn_max_age=600)
+    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
 
 # Password validation
