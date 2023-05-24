@@ -70,25 +70,21 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# DB_NAME = "books"
-# DB_USER = "felicity"
-# DB_PASSWORD = "Vin@8462368"
-# DATABASES = {
-    
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': DB_NAME,
-#         'USER': DB_USER,
-#         'PASSWORD': DB_PASSWORD,
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
-# default_db_url = 'postgres://localhost:5432/books'
+DB_NAME = "books"
+DB_USER = "felicity"
+DB_PASSWORD = "Vin@8462368"
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
+    
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
